@@ -1,10 +1,13 @@
 // Main page load in index.js
 
 import "./styles.css"
+import { menuPage } from "./module_one";
 
 function homePage(){
     const welcomeBoard = document.createElement("div");
     const content = document.querySelector("#content");
+
+    content.innerHTML = '';
 
     content.setAttribute("style", "background-color: teal;");
 
@@ -60,6 +63,15 @@ function homePage(){
 
     content.appendChild(contactBoard);
 }
+
+
+// Event listeners
+const homeButton = document.querySelector(".home");
+const menuButton = document.querySelector(".menu");
+const aboutButton = document.querySelector(".about");
+
+homeButton.addEventListener("click", homePage);
+menuButton.addEventListener("click", menuPage);
 
 
 homePage();
