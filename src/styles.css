@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bolder;
+
+    & button{
+        font-size: 2rem;
+    }
+
+    border-bottom: 1px solid gray;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: beige;
+}
+
+#content{
+    margin:  20%;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+}
