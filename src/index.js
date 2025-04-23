@@ -2,6 +2,7 @@
 
 import "./styles.css"
 import { menuPage } from "./module_one";
+import { aboutPage } from "./module_two";
 
 function homePage(){
     const welcomeBoard = document.createElement("div");
@@ -72,6 +73,7 @@ const aboutButton = document.querySelector(".about");
 
 homeButton.addEventListener("click", homePage);
 menuButton.addEventListener("click", menuPage);
+aboutButton.addEventListener("click", aboutPage);
 
 
 homePage();
